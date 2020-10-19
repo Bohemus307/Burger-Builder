@@ -1,13 +1,15 @@
 import React from "react"
 
-import classes from "./navigationitems.css"
+import classes from "./NavigationItems.css"
 import NavigationItem from "./NavigationItem/NavigationItem"
 
-const NavigationItems = (props) => (
+const navigationItems = () => (
   <ul className={classes.NavigationItems}>
-    <NavigationItem link="/">Burger Builder</NavigationItem>
+    <NavigationItem link="/" exact>
+      Burger Builder
+    </NavigationItem>
     <NavigationItem link="/orders">Orders</NavigationItem>
   </ul>
 )
 
-export default NavigationItems
+export default navigationItems
